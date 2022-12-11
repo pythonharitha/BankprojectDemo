@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1>Register</h1></center>
+        <form action=" " method="post">
+            {% csrf_token %}
+            <center><div class="container">
+            <input type="text" name="username" placeholder="Create a username"><br>
+            <input type="text" name="password" placeholder="Create a password"><br>
+            <input type="text" name="cpassword" placeholder="Confirm password"><br>
+            <div class="mx-auto">
+            <a href="{% url 'login' %}" class="btn btn-secondary btn-block my_custom_button">Submit</a>
+            </div>
+            </div></center>
+        </form>
+    </div>
+</body>
+</html>
+
